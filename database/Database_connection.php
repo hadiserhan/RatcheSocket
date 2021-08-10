@@ -6,7 +6,7 @@ class Database_connection
 {
 	function connect()
 	{
-		$connect = new PDO("mysql:host=localhost; dbname=chat", "root", "H@di123456");
+		$connect = new PDO("mysql:8.tcp.ngrok.io:17401; dbname=chat", "root", "H@di123456");
 
 		return $connect;
 	}
