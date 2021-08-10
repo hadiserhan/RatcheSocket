@@ -1,1 +1,1 @@
-web: vendor/bin/heroku-php-apache2 -C httpd.conf public/ & php bin/server.php & wait -n
+web: vendor/bin/heroku-php-apache2 -C httpd.conf  & php bin/server.php & wait -n
