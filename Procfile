@@ -1,1 +1,0 @@
-web: vendor/bin/heroku-php-apache2 -C httpd.conf  & php bin/server.php & wait -n
