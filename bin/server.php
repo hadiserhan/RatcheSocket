@@ -18,7 +18,7 @@ use MyApp\Chat;
     // $server->route('/socket', new Chat(), $allow);
 
     // $server->run();
-    $server = new Ratchet\App('0.0.0.0', 8080);
+    $server = new Ratchet\App('0.0.0.0', 8834);
     $server->route('/chat', new Chat, array('*'));
     $server->route('/echo', new Ratchet\Server\EchoServer, array('*'));
   
