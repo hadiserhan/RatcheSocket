@@ -6,7 +6,7 @@ use Ratchet\Server\IoServer;
 use Ratchet\Http\HttpServer;
 use Ratchet\WebSocket\WsServer;
 use MyApp\Chat;
-
+use Ratchet\App;
     require dirname(__DIR__) . '/vendor/autoload.php';
 
     $allow = ['localhost', 'wwebsoketserver.herokuapp.com'];
