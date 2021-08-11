@@ -205,7 +205,7 @@ $user_data = $user_object->get_user_all_data();
 	
 	$(document).ready(function(){
 
-		var conn = new WebSocket('wss://test1serversocket.herokuapp.com:6969');
+		var conn = new WebSocket('ws://test1serversocket.herokuapp.com');
 		conn.onopen = function(e) {
 		    console.log("Connection established!");
 		};
