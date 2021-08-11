@@ -18,7 +18,7 @@ use MyApp\Chat;
     // $server->route('/socket', new Chat(), $allow);
 
     // $server->run();
-    $server = new Ratchet\App('0.0.0.0', 8834);
+    $server = new Ratchet\App('wwebsoketserver.herokuapp.com', 8834,'0.0.0.0');
     $server->route('/chat', new Chat, array('*'));
     $server->route('/echo', new Ratchet\Server\EchoServer, array('*'));
   
