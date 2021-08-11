@@ -18,18 +18,18 @@ use MyApp\Chat;
     // $server->route('/socket', new Chat(), $allow);
 
     // $server->run();
-    $server = new Ratchet\App('wwebsoketserver.herokuapp.com', 8834,'0.0.0.0');
-    $server->route('/chat', new Chat, array('*'));
-    $server->route('/echo', new Ratchet\Server\EchoServer, array('*'));
+    // $server = new Ratchet\App('wwebsoketserver.herokuapp.com', 8834,'0.0.0.0');
+    // $server->route('/chat', new Chat, array('*'));
+    // $server->route('/echo', new Ratchet\Server\EchoServer, array('*'));
   
-    // $server = IoServer::factory(
-    //     new HttpServer(
-    //         new WsServer(
-    //             new Chat()
-    //         )
-    //     ),
-    //     8080
-    // );
+    $server = IoServer::factory(
+        new HttpServer(
+            new WsServer(
+                new Chat()
+            )
+        ),
+        8834
+    );
 
     $server->run();
 
