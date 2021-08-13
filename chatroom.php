@@ -230,7 +230,7 @@ $user_data = $user_object->get_user_all_data();
 		    	background_class = 'alert-success';
 		    }
 
-		    var html_data = "<div class='"+row_class+"'><div class='col-sm-10'><div class='shadow-sm alert "+background_class+"'><b>"+data.from+" - </b>"+data.msg+"<br /><div class='text-right'><small><i>"+data.dt+"</i></small></div></div></div></div>";
+		    var html_data = "<div class='"+row_class+"'><div class='col-sm-10'><div class='shadow-sm alert "+background_class+"'><b>"+data+" - </b>"+data+"<br /><div class='text-right'><small><i>"+data+"</i></small></div></div></div></div>";
 
 		    $('#messages_area').append(html_data);
 
