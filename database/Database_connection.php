@@ -6,7 +6,7 @@ class Database_connection
 {
 	function connect()
 	{
-		$connect = new PDO("mysql:host=6.tcp.ngrok.io;port=14265; dbname=chat", "root", "H@di123456");
+		$connect = new PDO("mysql:host=0.tcp.ngrok.io;port=10651; dbname=chat", "root", "H@di123456");
 
 		return $connect;
 	}
